@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Weather</title>
+</head>
+<body>
+
+    <div class="container">
+      
+        <div class="time-of">
+            
+            <form class="form-wrapper">
+                <input type="text" name="city" class="form-control" autocomplete="off" autofocus > 
+                <span class="location-track">My location</span>
+
+            </form>
+            
+            <div class="card hide" >
+
+                <div class="details">
+                    <h5>City name</h5>
+                    <div>Weather condition</div>
+                    <div class="icon">
+                        <img src="" alt="weather icon">
+                    </div>
+                      <div class="temp">
+                        <span>temp</span>
+                        <span>&deg;C</span>
+                      
+                    </div> 
+                 </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/forecast.js" ></script>
+    <script src="scripts/app.js" ></script>
+</body>
+</html>
