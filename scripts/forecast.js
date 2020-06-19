@@ -21,7 +21,7 @@ const getCity = async (city) => {
 };
 
 const getIP = async () => {
-  const base = "http://ip-api.com/json/";
+  const base = "https://ip-api.com/json/";
   const res = await fetch(base);
   const data = await res.json();
   return data;
