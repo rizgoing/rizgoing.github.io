@@ -21,8 +21,9 @@ const getCity = async (city) => {
 };
 
 const getIP = async () => {
+  const proxy = "https://cors-anywhere.herokuapp.com/";
   const base = "https://freegeoip.app/json/";
-  const res = await fetch(base);
+  const res = await fetch(proxy + base);
   const data = await res.json();
   return data;
 };
